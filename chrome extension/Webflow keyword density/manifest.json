@@ -12,12 +12,12 @@
     },
     "content_scripts": [
       {
-        "matches": ["https://*.webflow.com/*"],
-        "js": ["content.js"]
+        "matches": ["https://*.design.webflow.com/*"],
+        "js": ["content.js"],
+        "css": ["content.css"]
       }
     ],
     "action": {
-      "default_popup": "popup.html",
       "default_icon": {
         "16": "images/Flowww-Studio-extension-icon-16x16.png",
         "48": "images/Flowww-Studio-extension-icon-48x48.png",

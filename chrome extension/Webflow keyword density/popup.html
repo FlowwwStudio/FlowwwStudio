@@ -4,15 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Webflow Keyword Density</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="content.css">
 </head>
 <body>
-  <div id="app" class="flowww_component">
+<div id="app" class="flowww_component">
     <div class="flowww_src-modules-ui_panel">
         <div class="flowww_sidebar flowww_module-ui-menu">
             <div class="flowww_header">
                 <h2 class="flowww_title">Flowww Studio</h2>
-                <button class="flowww_close-button">X</button>
+                <button class="flowww_close-button">
+                    <svg data-wf-icon="CloseDefaultIcon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.70714 8.00004L12.3536 4.35359L11.6465 3.64648L8.00004 7.29293L4.35359 3.64648L3.64648 4.35359L7.29293 8.00004L3.64648 11.6465L4.35359 12.3536L8.00004 8.70714L11.6465 12.3536L12.3536 11.6465L8.70714 8.00004Z" fill="currentColor"></path>
+                    </svg>
+                </button>
             </div>
             <button id="keyword-density" title="Keyword Density" class="flowww_module-ui-button">
                 <div class="flowww_icon">
@@ -34,10 +38,14 @@
                 <div class="flowww_label">Keyword Density</div>
             </button>
         </div>
-        <div class="flowww_sidebar full">
+        <div id="keyword-density-panel" class="flowww_sidebar full">
             <div class="flowww_module-ui_header">
                 <h3 class="flowww_title">Webflow Keyword Density</h3>
-                <button class="flowww_close-button">X</button>
+                <button class="flowww_close-button">
+                    <svg data-wf-icon="CloseDefaultIcon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.70714 8.00004L12.3536 4.35359L11.6465 3.64648L8.00004 7.29293L4.35359 3.64648L3.64648 4.35359L7.29293 8.00004L3.64648 11.6465L4.35359 12.3536L8.00004 8.70714L11.6465 12.3536L12.3536 11.6465L8.70714 8.00004Z" fill="currentColor"></path>
+                    </svg>
+                </button>
             </div>
             <div class="flowww_module-ui_body">
                 <div class="flowww_keyword-density-form">
@@ -51,7 +59,7 @@
                     </div>
                     <button class="flowww_button" id="add-keyword">Add Keyword</button>
                 </div>
-                <ul id="keyword-list"><li>Keyword 1</li><li>Keyword 2</li><li>Keyword 3</li></ul>
+                <ul id="keyword-list"><li>keyword</li></ul>
                 <button class="flowww_button" id="analyze">Analyze</button>
                 <table id="results-table" class="keyword-table" style="display: block;">
                     <thead class="keyword-table-header">
@@ -66,12 +74,12 @@
                     </thead>
                     <tbody class="keyword-table-body">
                         <tr class="keyword-row">
-                            <td class="keyword-name"><div class="density-ratio">Mødepakker</div></td>
-                            <td class="paragraphs"><div class="density-ratio is-green">1.02%</div></td>
-                            <td class="headings"><div class="density-ratio is-blue">4.02%</div></td>
-                            <td class="meta-title"><div class="density-ratio is-red">0.02%</div></td>
-                            <td class="meta-description"><div class="density-ratio is-blue">0.02%</div></td>
-                            <td class="links"><div class="density-ratio is-red">0.02%</div></td>
+                            <td class="keyword-name"><div class="density-ratio"></div></td>
+                            <td class="paragraphs"><div class="density-ratio"></div></td>
+                            <td class="headings"><div class="density-ratio"></div></td>
+                            <td class="meta-title"><div class="density-ratio"></div></td>
+                            <td class="meta-description"><div class="density-ratio"></div></td>
+                            <td class="links"><div class="density-ratio"></div></td>
                         </tr>
                     </tbody>
                 </table> 
@@ -79,7 +87,7 @@
         </div> 
     </div>
 </div>
-<script src="popup.js"></script>
+<script src="content.js"></script>
 </body>
 </html>
 
