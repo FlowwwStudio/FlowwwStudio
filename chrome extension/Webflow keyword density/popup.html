@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Webflow Keyword Density</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app" class="flowww_component">
+    <div class="flowww_src-modules-ui_panel">
+        <div class="flowww_sidebar flowww_module-ui-menu">
+            <div class="flowww_header">
+                <h2 class="flowww_title">Flowww Studio</h2>
+                <button class="flowww_close-button">X</button>
+            </div>
+            <button id="keyword-density" title="Keyword Density" class="flowww_module-ui-button">
+                <div class="flowww_icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_243_21)">
+                        <path d="M1 10.5C1 13.0196 2.00089 15.4359 3.78249 17.2175C5.56408 18.9991 7.98044 20 10.5 20C13.0196 20 15.4359 18.9991 17.2175 17.2175C18.9991 15.4359 20 13.0196 20 10.5C20 7.98044 18.9991 5.56408 17.2175 3.78249C15.4359 2.00089 13.0196 1 10.5 1C7.98044 1 5.56408 2.00089 3.78249 3.78249C2.00089 5.56408 1 7.98044 1 10.5Z" stroke="white" stroke-width="2"/>
+                        <path d="M17.2173 17.2178L23 23" stroke="white" stroke-width="2"/>
+                        <path d="M6 6.5H15" stroke="white" stroke-width="2"/>
+                        <path d="M6 10.5H15" stroke="white" stroke-width="2"/>
+                        <path d="M6 14.5H11" stroke="white" stroke-width="2"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_243_21">
+                        <rect width="24" height="24" fill="white"/>
+                        </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="flowww_label">Keyword Density</div>
+            </button>
+        </div>
+        <div class="flowww_sidebar full">
+            <div class="flowww_module-ui_header">
+                <h3 class="flowww_title">Webflow Keyword Density</h3>
+                <button class="flowww_close-button">X</button>
+            </div>
+            <div class="flowww_module-ui_body">
+                <div class="flowww_keyword-density-form">
+                    <div class="flowww_input-wrapper">
+                        <div class="flowww_input-icon">
+                            <svg viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.5 5C8.5 6.933 6.933 8.5 5 8.5C3.067 8.5 1.5 6.933 1.5 5C1.5 3.067 3.067 1.5 5 1.5C6.933 1.5 8.5 3.067 8.5 5ZM7.96544 9.0261C7.13578 9.63821 6.11014 10 5 10C2.23858 10 0 7.76142 0 5C0 2.23858 2.23858 0 5 0C7.76142 0 10 2.23858 10 5C10 6.11014 9.63821 7.13578 9.0261 7.96544L12.5303 11.4697L11.4697 12.5303L7.96544 9.0261Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <input class="flowww_input" type="text" id="keyword-input" placeholder="Enter keyword">
+                    </div>
+                    <button class="flowww_button" id="add-keyword">Add Keyword</button>
+                </div>
+                <ul id="keyword-list"><li>Keyword 1</li><li>Keyword 2</li><li>Keyword 3</li></ul>
+                <button class="flowww_button" id="analyze">Analyze</button>
+                <table id="results-table" class="keyword-table" style="display: block;">
+                    <thead class="keyword-table-header">
+                        <tr class="keyword-row">
+                            <th class="theader-keyword-name">Keyword</th>
+                            <th class="theader-paragraphs">Paragraphs</th>
+                            <th class="theader-headings">Headings</th>
+                            <th class="theader-meta-title">Meta Title</th>
+                            <th class="theader-meta-description">Meta Description</th>
+                            <th class="theader-links">Links</th>
+                        </tr>
+                    </thead>
+                    <tbody class="keyword-table-body">
+                        <tr class="keyword-row">
+                            <td class="keyword-name"><div class="density-ratio">Mødepakker</div></td>
+                            <td class="paragraphs"><div class="density-ratio is-green">1.02%</div></td>
+                            <td class="headings"><div class="density-ratio is-blue">4.02%</div></td>
+                            <td class="meta-title"><div class="density-ratio is-red">0.02%</div></td>
+                            <td class="meta-description"><div class="density-ratio is-blue">0.02%</div></td>
+                            <td class="links"><div class="density-ratio is-red">0.02%</div></td>
+                        </tr>
+                    </tbody>
+                </table> 
+            </div> 
+        </div> 
+    </div>
+</div>
+<script src="popup.js"></script>
+</body>
+</html>
+

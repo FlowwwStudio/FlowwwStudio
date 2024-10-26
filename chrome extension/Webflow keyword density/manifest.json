@@ -1,0 +1,32 @@
+{
+    "manifest_version": 3,
+    "name": "Webflow Keyword Density",
+    "version": "1.0",
+    "description": "SEO extension for analyzing keyword density in Webflow projects",
+    "permissions": ["activeTab", "storage"],
+    "host_permissions": [
+      "https://*.webflow.com/*"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://*.webflow.com/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "images/Flowww-Studio-extension-icon-16x16.png",
+        "48": "images/Flowww-Studio-extension-icon-48x48.png",
+        "128": "images/Flowww-Studio-extension-icon-128x128.png"
+      }
+    },
+    "icons": {
+      "16": "images/Flowww-Studio-extension-icon-16x16.png",
+      "48": "images/Flowww-Studio-extension-icon-48x48.png",
+      "128": "images/Flowww-Studio-extension-icon-128x128.png"
+    }
+  }
